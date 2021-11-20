@@ -63,7 +63,7 @@ return [
             ]) : [],
         ],
 
-       'pgsql' => [
+        'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
             'host' => isset($DATABASE_URL['host']) ? $DATABASE_URL['host'] : null,
