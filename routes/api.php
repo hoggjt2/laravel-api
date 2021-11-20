@@ -40,7 +40,7 @@ Route::group(['prefix' => 'v1'], function () {
     Route::get('/students/{id}', [StudentController::class, 'show']);
 
     Route::group(['middleware' => ['auth:sanctum']], function () {
-        Route::post('/logout', [AuthController::class, 'logout']);
+        Route::get('/logout', [AuthController::class, 'logout']);
 
         Route::post('/courses', [CourseController::class, 'store']);
         Route::put('/courses/{id}', [CourseController::class, 'update']);
