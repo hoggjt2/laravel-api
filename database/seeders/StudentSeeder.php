@@ -23,7 +23,7 @@ class StudentSeeder extends Seeder
                 'first_name' => $obj->first_name,
                 'last_name' => $obj->last_name,
                 'dob' => $obj->dob,
-                'phone' => $obj->phone,
+                //'phone' => $obj->phone,
                 'email' => $obj->email,
                 'institution_id' => $obj->institution_id
             ));

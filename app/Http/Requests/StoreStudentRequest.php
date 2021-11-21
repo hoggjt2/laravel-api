@@ -16,7 +16,7 @@ class StoreStudentRequest extends FormRequest
             'last_name' => 'required|string|regex:/^[a-zA-Z\s]*$/|max:255',
             'dob' => 'required|date|before:today',
             'email' => 'required|string|unique:students,email',
-            'phone' => 'required|regex:/^02[0-9]{5,10}$/',
+            //'phone' => 'required|regex:/^02[0-9]{5,10}$/',
             'institution_id' => 'required|exists:institutions,id'
         ];
     }

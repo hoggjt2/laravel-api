@@ -16,7 +16,7 @@ class UpdateStudentRequest extends FormRequest
             'last_name' => 'string|regex:/^[a-zA-Z\s]*$/|max:255',
             'dob' => 'date|before:today',
             'email' => 'string|unique:students,email',
-            'phone' => 'regex:/^02[0-9]{5,10}$/',
+            //'phone' => 'regex:/^02[0-9]{5,10}$/',
             'institution_id' => 'exists:institutions,id'
         ];
     }
