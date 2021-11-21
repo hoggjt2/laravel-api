@@ -36,7 +36,8 @@ class StudentController extends Controller
 
     public function store(StoreStudentRequest $request)
     {
-        Student::create($request->validated());
+        //Student::create($request->validated());
+        Student::create($request);
         return $this->response_message('Student created', 201);
     }
 
