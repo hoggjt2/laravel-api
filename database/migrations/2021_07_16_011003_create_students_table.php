@@ -18,7 +18,7 @@ class CreateStudentsTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('dob');
-            $table->string('phone');
+            //$table->string('phone');
             $table->string('email')->unique();;
             $table->foreignId('institution_id')
                 ->constrained('institutions')
